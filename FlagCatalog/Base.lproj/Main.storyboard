@@ -16,22 +16,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Country" textLabel="jkb-5C-jZU" style="IBUITableViewCellStyleDefault" id="CDY-0g-ywJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Country" id="CDY-0g-ywJ" customClass="TableViewCell" customModule="FlagCatalog" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CDY-0g-ywJ" id="oy9-Xv-A8U">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CDY-0g-ywJ" id="oy9-Xv-A8U">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jkb-5C-jZU">
-                                            <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="as.png" translatesAutoresizingMaskIntoConstraints="NO" id="JSg-Ci-VDR">
+                                            <rect key="frame" x="20" y="2" width="60" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="cZ7-ko-Cop"/>
+                                                <constraint firstAttribute="width" constant="60" id="xVg-Gk-wPQ"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBW-ih-4Yy">
+                                            <rect key="frame" x="88" y="11.333333333333336" width="305" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="fBW-ih-4Yy" firstAttribute="leading" secondItem="JSg-Ci-VDR" secondAttribute="trailing" constant="8" symbolic="YES" id="PC3-Oc-xqD"/>
+                                        <constraint firstItem="fBW-ih-4Yy" firstAttribute="centerY" secondItem="JSg-Ci-VDR" secondAttribute="centerY" id="Rjm-12-xOl"/>
+                                        <constraint firstItem="JSg-Ci-VDR" firstAttribute="leading" secondItem="oy9-Xv-A8U" secondAttribute="leading" constant="20" symbolic="YES" id="SDV-5P-oGb"/>
+                                        <constraint firstItem="JSg-Ci-VDR" firstAttribute="centerY" secondItem="oy9-Xv-A8U" secondAttribute="centerY" id="X6f-bX-osp"/>
+                                        <constraint firstAttribute="trailing" secondItem="fBW-ih-4Yy" secondAttribute="trailing" id="YQr-Xt-nDN"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="flag" destination="JSg-Ci-VDR" id="6ge-1c-qEk"/>
+                                    <outlet property="name" destination="fBW-ih-4Yy" id="bwP-CB-asX"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -65,6 +82,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="as.png" width="1000" height="500"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
