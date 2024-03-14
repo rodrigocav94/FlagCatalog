@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -62,6 +63,37 @@
             </objects>
             <point key="canvasLocation" x="684.73282442748086" y="23.943661971830988"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="jWO-jN-tGU">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="7ol-59-ARn" customClass="DetailViewController" customModule="FlagCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cZa-kn-t5c">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DIg-hE-RGI">
+                                <rect key="frame" x="20" y="79" width="353" height="719"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gIz-uk-b9V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gIz-uk-b9V" firstAttribute="trailing" secondItem="DIg-hE-RGI" secondAttribute="trailing" constant="20" id="CDO-gw-Rj5"/>
+                            <constraint firstItem="DIg-hE-RGI" firstAttribute="leading" secondItem="gIz-uk-b9V" secondAttribute="leading" constant="20" id="Gnd-Y8-aug"/>
+                            <constraint firstItem="gIz-uk-b9V" firstAttribute="bottom" secondItem="DIg-hE-RGI" secondAttribute="bottom" constant="20" id="Sue-5b-95g"/>
+                            <constraint firstItem="DIg-hE-RGI" firstAttribute="centerX" secondItem="gIz-uk-b9V" secondAttribute="centerX" id="Ug9-vv-z4V"/>
+                            <constraint firstItem="DIg-hE-RGI" firstAttribute="top" secondItem="gIz-uk-b9V" secondAttribute="top" constant="20" id="Vhs-LD-Ouy"/>
+                            <constraint firstItem="DIg-hE-RGI" firstAttribute="centerY" secondItem="gIz-uk-b9V" secondAttribute="centerY" id="vO2-3n-lqd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="DIg-hE-RGI" id="FYe-o2-0TN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcD-6e-VvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1585" y="24"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="tmh-mH-lfa">
             <objects>
@@ -82,6 +114,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ad.png" width="1000" height="700"/>
         <image name="as.png" width="1000" height="500"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

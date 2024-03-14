@@ -268,6 +268,7 @@
 		9F7108762BA2EB06009D1E12 /* zm.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F7107782BA2EB06009D1E12 /* zm.png */; };
 		9F7108772BA2EB06009D1E12 /* zw.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F7107792BA2EB06009D1E12 /* zw.png */; };
 		9F7108792BA2F40E009D1E12 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7108782BA2F40E009D1E12 /* TableViewCell.swift */; };
+		9F71087B2BA2F6F5009D1E12 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F71087A2BA2F6F5009D1E12 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -534,6 +535,7 @@
 		9F7107782BA2EB06009D1E12 /* zm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zm.png; sourceTree = "<group>"; };
 		9F7107792BA2EB06009D1E12 /* zw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zw.png; sourceTree = "<group>"; };
 		9F7108782BA2F40E009D1E12 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		9F71087A2BA2F6F5009D1E12 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -569,6 +571,7 @@
 				9F7102732BA2DBAA009D1E12 /* AppDelegate.swift */,
 				9F7102752BA2DBAA009D1E12 /* SceneDelegate.swift */,
 				9F7102772BA2DBAA009D1E12 /* ViewController.swift */,
+				9F71087A2BA2F6F5009D1E12 /* DetailViewController.swift */,
 				9F7108782BA2F40E009D1E12 /* TableViewCell.swift */,
 				9F7102792BA2DBAA009D1E12 /* Main.storyboard */,
 				9F71027C2BA2DBAC009D1E12 /* Assets.xcassets */,
@@ -1167,6 +1170,7 @@
 				9F7108792BA2F40E009D1E12 /* TableViewCell.swift in Sources */,
 				9F71067C2BA2E4F3009D1E12 /* Country.swift in Sources */,
 				9F7102782BA2DBAA009D1E12 /* ViewController.swift in Sources */,
+				9F71087B2BA2F6F5009D1E12 /* DetailViewController.swift in Sources */,
 				9F7102742BA2DBAA009D1E12 /* AppDelegate.swift in Sources */,
 				9F7102762BA2DBAA009D1E12 /* SceneDelegate.swift in Sources */,
 			);
